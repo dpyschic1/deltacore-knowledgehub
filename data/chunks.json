@@ -1,0 +1,274 @@
+[
+    {
+        "doc_id": "architecture.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\architecture.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 36,
+        "text": "# Technology Architecture Overview\n\n\n\n"
+    },
+    {
+        "doc_id": "architecture.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\architecture.md",
+        "chunk_index": 1,
+        "start_char": 36,
+        "end_char": 514,
+        "text": "## Vector Databases\n\n\n\nVector databases store embeddings and allow fast similarity search, which\npowers semantic search features. Before adopting a dedicated vector\ndatabase for production, the team evaluated VectorBridge, an internal\nmodule built by the platform team that adds similarity search directly\ninside PostgreSQL. A dedicated vector database was ultimately chosen for\nproduction scale, but VectorBridge is still used in development\nenvironments for quick prototyping.\n\n"
+    },
+    {
+        "doc_id": "architecture.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\architecture.md",
+        "chunk_index": 2,
+        "start_char": 514,
+        "end_char": 824,
+        "text": "## PostgreSQL\n\n\n\nPostgreSQL is the company's primary relational database. It runs\nVectorBridge, an internal module built by the platform team, which enables\napproximate nearest-neighbor search directly inside PostgreSQL, making it a\nlightweight alternative to a dedicated vector database for smaller\nworkloads.\n\n"
+    },
+    {
+        "doc_id": "architecture.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\architecture.md",
+        "chunk_index": 3,
+        "start_char": 824,
+        "end_char": 1055,
+        "text": "## Kubernetes and Terraform\n\n\n\nKubernetes orchestrates containerized services across the company's\ninfrastructure. Terraform provisions the underlying cloud resources that\nKubernetes runs on, including compute nodes and networking.\n\n"
+    },
+    {
+        "doc_id": "architecture.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\architecture.md",
+        "chunk_index": 4,
+        "start_char": 1055,
+        "end_char": 1190,
+        "text": "## Rust\n\n\n\nRust is used for services where performance and memory safety are critical,\nsuch as high-throughput data ingestion pipelines.\n"
+    },
+    {
+        "doc_id": "projects.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\projects.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 19,
+        "text": "# Active Projects\n\n\n\n"
+    },
+    {
+        "doc_id": "projects.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\projects.md",
+        "chunk_index": 1,
+        "start_char": 19,
+        "end_char": 251,
+        "text": "## Project Atlas\n\n\n\nProject Atlas is a recommendation engine that relies on semantic search to\nmatch users with relevant content. It is built on top of the company's\nvector database infrastructure. The project is led by Marcus Webb.\n\n"
+    },
+    {
+        "doc_id": "projects.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\projects.md",
+        "chunk_index": 2,
+        "start_char": 251,
+        "end_char": 440,
+        "text": "## Project Kestrel\n\n\n\nProject Kestrel is a high-throughput data ingestion service written in Rust,\nbacked by a PostgreSQL database. It was designed and implemented primarily\nby Priya Patel.\n\n"
+    },
+    {
+        "doc_id": "projects.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\projects.md",
+        "chunk_index": 3,
+        "start_char": 440,
+        "end_char": 661,
+        "text": "## Project Beacon\n\n\n\nProject Beacon is the internal deployment platform, orchestrated with\nKubernetes and provisioned with Terraform. Sofia Ramos owns this project\nend-to-end, from infrastructure design to on-call support.\n"
+    },
+    {
+        "doc_id": "sample_blog.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_blog.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 257,
+        "text": "# The Future of Web Development\n\n\n\n*Published: January 15, 2025 · 8 min read*\n\nWeb development has evolved dramatically over the past decade. From static HTML pages to complex single-page applications, the tools and patterns we use are constantly improving.\n\n"
+    },
+    {
+        "doc_id": "sample_blog.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_blog.md",
+        "chunk_index": 1,
+        "start_char": 257,
+        "end_char": 280,
+        "text": "## Key Trends in 2025\n\n\n\n"
+    },
+    {
+        "doc_id": "sample_blog.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_blog.md",
+        "chunk_index": 2,
+        "start_char": 280,
+        "end_char": 484,
+        "text": "### 1. AI-Assisted Development\n\n\n\nArtificial intelligence is now embedded into every major IDE and code editor. Developers spend less time on boilerplate and more time on architecture and problem-solving.\n\n"
+    },
+    {
+        "doc_id": "sample_blog.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_blog.md",
+        "chunk_index": 3,
+        "start_char": 484,
+        "end_char": 640,
+        "text": "### 2. Edge Computing\n\n\n\nMore workloads are moving to the edge, closer to users. This reduces latency and improves the user experience for global audiences.\n\n"
+    },
+    {
+        "doc_id": "sample_blog.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_blog.md",
+        "chunk_index": 4,
+        "start_char": 640,
+        "end_char": 790,
+        "text": "### 3. Web Components\n\n\n\nNative web components have matured significantly. Many teams are building component libraries without framework dependencies.\n\n"
+    },
+    {
+        "doc_id": "sample_blog.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_blog.md",
+        "chunk_index": 5,
+        "start_char": 790,
+        "end_char": 1140,
+        "text": "## What This Means for Developers\n\n\n\nThe role of the developer is shifting. Technical skills remain essential, but the ability to think architecturally, communicate clearly, and collaborate with AI tools is becoming equally important.\n\n> \"The best developers of 2025 aren't those who write the most code — they're those who solve the right problems.\"\n\n"
+    },
+    {
+        "doc_id": "sample_blog.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_blog.md",
+        "chunk_index": 6,
+        "start_char": 1140,
+        "end_char": 1289,
+        "text": "## Conclusion\n\n\n\nStay curious, keep learning, and embrace the tools that make you more effective.\n\n---\n\n*Tags: web development, AI, frontend, backend*\n"
+    },
+    {
+        "doc_id": "sample_resume.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_resume.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 99,
+        "text": "# Alex Johnson\n\n\n\n**Full Stack Developer** · alex.johnson@example.com · github.com/alexjohnson\n\n---\n\n"
+    },
+    {
+        "doc_id": "sample_resume.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_resume.md",
+        "chunk_index": 1,
+        "start_char": 99,
+        "end_char": 275,
+        "text": "## Summary\n\n\n\nExperienced full stack developer with 8 years building scalable web applications. Passionate about clean code, developer experience, and performance optimisation.\n\n"
+    },
+    {
+        "doc_id": "sample_resume.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_resume.md",
+        "chunk_index": 2,
+        "start_char": 275,
+        "end_char": 290,
+        "text": "## Experience\n\n\n\n"
+    },
+    {
+        "doc_id": "sample_resume.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_resume.md",
+        "chunk_index": 3,
+        "start_char": 290,
+        "end_char": 568,
+        "text": "### Senior Developer — TechCorp Ltd *(2021–Present)*\n\n\n\n- Led team of 6 engineers delivering a SaaS platform serving 50k+ users\n- Reduced API response time by 60% through caching and query optimisation\n- Introduced TypeScript across the codebase, reducing production bugs by 40%\n\n"
+    },
+    {
+        "doc_id": "sample_resume.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_resume.md",
+        "chunk_index": 4,
+        "start_char": 568,
+        "end_char": 764,
+        "text": "### Developer — StartupXYZ *(2018–2021)*\n\n\n\n- Built React dashboard from scratch, adopted by 200+ enterprise clients\n- Designed and implemented REST and GraphQL APIs\n- Mentored 3 junior developers\n\n"
+    },
+    {
+        "doc_id": "sample_resume.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_resume.md",
+        "chunk_index": 5,
+        "start_char": 764,
+        "end_char": 950,
+        "text": "## Skills\n\n\n\n**Languages:** TypeScript, Python, SQL, Go\n**Frontend:** React, Next.js, Tailwind CSS\n**Backend:** Node.js, FastAPI, PostgreSQL, Redis\n**Tools:** Docker, GitHub Actions, AWS\n\n"
+    },
+    {
+        "doc_id": "sample_resume.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_resume.md",
+        "chunk_index": 6,
+        "start_char": 950,
+        "end_char": 1017,
+        "text": "## Education\n\n\n\n**BSc Computer Science** — State University *(2018)*\n"
+    },
+    {
+        "doc_id": "sample_tables.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_tables.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 29,
+        "text": "# Markdown Tables Reference\n\n\n\n"
+    },
+    {
+        "doc_id": "sample_tables.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_tables.md",
+        "chunk_index": 1,
+        "start_char": 29,
+        "end_char": 165,
+        "text": "## Basic Table\n\n\n\n| Name | Age | City |\n|------|-----|------|\n| Alice | 28 | New York |\n| Bob | 34 | London |\n| Carol | 25 | Singapore |\n\n"
+    },
+    {
+        "doc_id": "sample_tables.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_tables.md",
+        "chunk_index": 2,
+        "start_char": 165,
+        "end_char": 298,
+        "text": "## Alignment\n\n\n\n| Left | Center | Right |\n|:-----|:------:|------:|\n| left aligned | centered | right aligned |\n| text | text | 123 |\n\n"
+    },
+    {
+        "doc_id": "sample_tables.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample_tables.md",
+        "chunk_index": 3,
+        "start_char": 298,
+        "end_char": 635,
+        "text": "## Data Table\n\n\n\n| Format | MIME Type | Extension | Open Standard |\n|--------|-----------|-----------|:--------------:|\n| JPEG | image/jpeg | .jpg | Yes |\n| PNG | image/png | .png | Yes |\n| WebP | image/webp | .webp | Yes |\n| MP4 | video/mp4 | .mp4 | Partially |\n| WebM | video/webm | .webm | Yes |\n| MP3 | audio/mpeg | .mp3 | Partially |\n"
+    },
+    {
+        "doc_id": "team.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\team.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 15,
+        "text": "# Team Roster\n\n\n\n"
+    },
+    {
+        "doc_id": "team.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\team.md",
+        "chunk_index": 1,
+        "start_char": 15,
+        "end_char": 354,
+        "text": "## Priya Patel — Backend Engineer\n\n\n\nPriya joined the engineering team in 2021 and specializes in backend systems.\nShe has deep experience with PostgreSQL, including schema design, indexing\nstrategy, and query optimization. She also writes Rust for performance-critical\nservices and maintains the company's internal logging infrastructure.\n\n"
+    },
+    {
+        "doc_id": "team.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\team.md",
+        "chunk_index": 2,
+        "start_char": 354,
+        "end_char": 667,
+        "text": "## Marcus Webb — Machine Learning Engineer\n\n\n\nMarcus leads the company's machine learning initiatives. He builds models\nusing PyTorch and has experience deploying them at scale. He is also\nresponsible for the company's vector database infrastructure, which powers\nsemantic search features across several products.\n\n"
+    },
+    {
+        "doc_id": "team.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\team.md",
+        "chunk_index": 3,
+        "start_char": 667,
+        "end_char": 943,
+        "text": "## Sofia Ramos — DevOps Engineer\n\n\n\nSofia manages the company's cloud infrastructure. She is an expert in\nKubernetes for container orchestration and Terraform for infrastructure\nprovisioning. She also maintains the CI/CD pipelines used by every\nengineering team at the company.\n"
+    },
+    {
+        "doc_id": "sample.txt",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample.txt",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 493,
+        "text": "The think tank of China’s People’s Liberation Army Rocket Force recently recruited 13 Chinese technicians\n from private companies, PLA Daily reported on Saturday.\nZhang Hao and 12 other science and technology experts received letters of appointment at the founding ceremony of\nthe PLA Rocket Force national defense science and technology experts panel, according to a report published by the\nPLA Daily on Saturday.\nHonored as “rocket force science and technology experts,” Zhang and his fellow"
+    },
+    {
+        "doc_id": "sample.txt",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample.txt",
+        "chunk_index": 1,
+        "start_char": 448,
+        "end_char": 946,
+        "text": "and technology experts,” Zhang and his fellow experts from private companies will\nserve as members of the PLA Rocket Force think tank, which will conduct research into fields like overall design of\nthe missiles, missile launching and network system technology for five years.\nThe experts will enjoy the same treatment as their counterparts from State-owned firms, the report said.\nThe PLA Daily said that this marks a new development in deepening military-civilian integration in China, which\ncould"
+    },
+    {
+        "doc_id": "sample.txt",
+        "source_path": "D:\\PythonBasedRag\\docs\\sample.txt",
+        "chunk_index": 2,
+        "start_char": 913,
+        "end_char": 1058,
+        "text": "integration in China, which\ncould make science and technology innovation better contribute to the enhancement of the force’s combat capabilities."
+    }
+]

@@ -1,0 +1,9 @@
+import json
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer("all-MiniLM-L6-v2")
+names = ["PostgreSQL", "Kubernetes", "Vector databases", "Terraform", "Priya Patel", "Sofia Ramos"]
+vecs = model.encode(names, normalize_embeddings=True)
+for i in range(len(names)):
+    for j in range(i+1, len(names)):
+        print(names[i], "<->", names[j], "=", vecs[i] @ vecs[j])
