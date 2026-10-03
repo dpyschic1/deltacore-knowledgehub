@@ -1,7 +1,6 @@
 import json, requests
 from pathlib import Path
-OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL_NAME = "qwen2.5:3b"
+from config import OLLAMA_URL, GENERATION_MODEL_NAME, TEMPERATURE
 
 EXTRACTION_SYSTEM_PROMPT = (
     "You are an information extraction system. Read the text and extract "
@@ -35,14 +34,14 @@ def extract_triplets(chunk_text):
     )
 
     paylod = {
-        "model": MODEL_NAME,
+        "model": GENERATION_MODEL_NAME,
         "messages": [
             {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt},
         ],
         "format": "json",
         "stream": False,
-        "options": {"temperature": 0},
+        "options": {"temperature": TEMPERATURE},
     }
     try: 
         response = requests.post(OLLAMA_URL, json=paylod, timeout=360)

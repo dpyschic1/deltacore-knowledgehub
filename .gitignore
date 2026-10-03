@@ -7,3 +7,6 @@ __pycache__/
 
 # Eval tracking file (kept local, not versioned)
 data/eval_questions.json
+
+# Pipeline orchestration helper (kept local, not versioned)
+src/build_all.py

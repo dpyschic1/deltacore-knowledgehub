@@ -2,9 +2,8 @@ import sys
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
 import numpy as np, json
+from config import TOP_K, SIMILARITY_THRESHOLD, EMBEDDING_MODEL_NAME
 
-TOP_K = 3
-SIMILARITY_THRESHOLD = 0.40
 def main():
     data_path = Path(__file__).resolve().parent.parent / "data" 
     chunks = []
@@ -15,7 +14,7 @@ def main():
 
     query = sys.argv[1]
 
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    model = SentenceTransformer(EMBEDDING_MODEL_NAME)
     query_vector = model.encode([query], normalize_embeddings=True)[0]
 
     similarities = np.dot(vectors, query_vector)
@@ -33,7 +32,7 @@ def retrieve_chunks(question, top_k):
     with open(data_path / "chunks.json", "r", encoding="utf-8") as c:
         chunks = json.load(c)
     vectors = np.load(data_path / "embeddings.npy")
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    model = SentenceTransformer(EMBEDDING_MODEL_NAME)
     query_vector = model.encode([question], normalize_embeddings=True)[0]
 
     similarities = np.dot(vectors, query_vector)

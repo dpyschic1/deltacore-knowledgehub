@@ -1,6 +1,5 @@
 import networkx as nx
-
-MAX_HOPS = 4
+from config import MAX_HOPS
 
 def find_matching_entities(question, node_names):
     q = question.lower()

@@ -1,9 +1,8 @@
 import json
 import re
 from pathlib import Path
+from config import CHUNK_SIZE, CHUNK_OVERLAP
 
-CHUNK_SIZE = 500
-CHUNK_OVERLAP = 50
 HEADING_RE = re.compile(r'^#{1,6}\s+.*$', re.MULTILINE)
 
 

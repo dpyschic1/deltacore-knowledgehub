@@ -5,8 +5,7 @@ from pathlib import Path
 from retrieve import retrieve_chunks
 from graph_retrieve import graph_retrieve
 from generate import generate_answer
-
-TOP_K = 3
+from config import TOP_K
 
 def load_graph():
     data_path = Path(__file__).resolve().parent.parent / "data"

@@ -1,7 +1,8 @@
 import json
 from sentence_transformers import SentenceTransformer
+from config import EMBEDDING_MODEL_NAME
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer(EMBEDDING_MODEL_NAME)
 names = ["PostgreSQL", "Kubernetes", "Vector databases", "Terraform", "Priya Patel", "Sofia Ramos"]
 vecs = model.encode(names, normalize_embeddings=True)
 for i in range(len(names)):

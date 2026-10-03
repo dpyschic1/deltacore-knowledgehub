@@ -1,7 +1,5 @@
 import requests
-
-OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL_NAME = "qwen2.5:3b"
+from config import OLLAMA_URL, GENERATION_MODEL_NAME, TEMPERATURE
 
 SYSTEM_PROMT = (
     "You are a document question-answering assistant. Answer strictly and "
@@ -11,7 +9,7 @@ SYSTEM_PROMT = (
     "\"I don't know based on the provided documents.\" Do not guess or infer "
     "beyond what the context states."
 )
-TEMPERATURE = 0
+
 def build_user_prompt(question, retrieved_chunks):
     blocks = []
     for chunk in retrieved_chunks:
@@ -23,7 +21,7 @@ def build_user_prompt(question, retrieved_chunks):
 def generate_answer(question, retrieved_chunks):
     user_prompt = build_user_prompt(question, retrieved_chunks)
     payload = {
-        "model": MODEL_NAME,
+        "model": GENERATION_MODEL_NAME,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMT},
             {"role": "user", "content": user_prompt}
