@@ -66,7 +66,8 @@ def extract_triplets(chunk_text):
 
     valid_triplets = []
     for item in triples_list:
-        if isinstance(item, dict) and {"subject", "relation", "object"} <= item.keys():
+        required_fields = {"subject", "relation", "object"}
+        if isinstance(item, dict) and required_fields <= item.keys() and all(str(item[field]).strip() for field in required_fields):
             valid_triplets.append(item)
         else:
             print(f"WARNING: malformed triple, skipping: {item!r}")

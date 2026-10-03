@@ -3,7 +3,7 @@ from pathlib import Path
 from sentence_transformers import SentenceTransformer
 import numpy as np
 from collections import Counter, defaultdict
-from config import EMBEDDING_MODEL_NAME
+from config import ENTITY_EMBEDDING_MODEL_NAME
 
 def get_unique_entities(triples):
     names = set()
@@ -68,7 +68,7 @@ def main():
         triples = json.load(c)
 
     names = get_unique_entities(triples)
-    model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+    model = SentenceTransformer(ENTITY_EMBEDDING_MODEL_NAME)
     parent = cluster_entities(names, model, threshold=0.63)
     canonical = pick_canonical_names(names, parent, triples)
 

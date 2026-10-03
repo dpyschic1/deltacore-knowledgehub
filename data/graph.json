@@ -133,9 +133,6 @@
             "id": "Native web components"
         },
         {
-            "id": ""
-        },
-        {
             "id": "Team Roster"
         },
         {
@@ -1089,16 +1086,6 @@
             "raw_object": "improves user experience for global audiences",
             "source": "Edge Computing",
             "target": "improves user experience for global audiences",
-            "key": 0
-        },
-        {
-            "relation": "have_matured_significantly",
-            "source_doc_id": "sample_blog.md",
-            "source_chunk_index": 4,
-            "raw_subject": "Native web components",
-            "raw_object": "",
-            "source": "Native web components",
-            "target": "",
             "key": 0
         },
         {

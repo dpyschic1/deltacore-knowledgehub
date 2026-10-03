@@ -7,7 +7,12 @@ SYSTEM_PROMT = (
     "outside knowledge, even if you are confident it is correct. If the "
     "context does not explicitly contain the answer, respond with exactly: "
     "\"I don't know based on the provided documents.\" Do not guess or infer "
-    "beyond what the context states."
+    "beyond what the context states. If the question asks \"besides X\" or "
+    "\"excluding X\", your final answer must NOT be X, even if X appears most "
+    "prominently in the context -- actively search the context for a "
+    "DIFFERENT named person who satisfies the question. If no other person "
+    "is supported by the context, say so explicitly rather than naming the "
+    "excluded person."
 )
 
 def build_user_prompt(question, retrieved_chunks):

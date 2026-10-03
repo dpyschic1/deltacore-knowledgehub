@@ -442,15 +442,6 @@
     },
     {
         "subject": "Native web components",
-        "relation": "have_matured_significantly",
-        "object": "",
-        "raw_subject": "Native web components",
-        "raw_object": "",
-        "source_doc_id": "sample_blog.md",
-        "source_chunk_index": 4
-    },
-    {
-        "subject": "Native web components",
         "relation": "used_by",
         "object": "Team Roster",
         "raw_subject": "Native web components",
