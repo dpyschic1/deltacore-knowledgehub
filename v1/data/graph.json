@@ -1,0 +1,1704 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+        {
+            "id": "Chicago Bulls"
+        },
+        {
+            "id": "Jordan"
+        },
+        {
+            "id": "January 16, 1966"
+        },
+        {
+            "id": "a championship"
+        },
+        {
+            "id": "1991"
+        },
+        {
+            "id": "The core roster during the first three-peat"
+        },
+        {
+            "id": "Pippen"
+        },
+        {
+            "id": "Horace Grant"
+        },
+        {
+            "id": "Phil Jackson"
+        },
+        {
+            "id": "Rodman"
+        },
+        {
+            "id": "72 regular-season wins"
+        },
+        {
+            "id": "NBA record"
+        },
+        {
+            "id": "4 (Jerry Sloan)"
+        },
+        {
+            "id": "10 (Bob Love)"
+        },
+        {
+            "id": "International Amphitheatre"
+        },
+        {
+            "id": "Chicago Stadium"
+        },
+        {
+            "id": "United Center"
+        },
+        {
+            "id": "Southeastern Oklahoma State University"
+        },
+        {
+            "id": "1984 NBA draft"
+        },
+        {
+            "id": "Chuck Daly"
+        },
+        {
+            "id": "head coach"
+        },
+        {
+            "id": "Bob Hill"
+        },
+        {
+            "id": "ten times"
+        },
+        {
+            "id": "project"
+        },
+        {
+            "id": "AI technology"
+        },
+        {
+            "id": "fifth overall"
+        },
+        {
+            "id": "New Jersey Nets"
+        },
+        {
+            "id": "Doug Collins"
+        },
+        {
+            "id": "all six of those series"
+        },
+        {
+            "id": "the first three-peat"
+        },
+        {
+            "id": "1985 Rookie of the Year award"
+        },
+        {
+            "id": "scoring"
+        },
+        {
+            "id": "Project Phoenix"
+        },
+        {
+            "id": "Fighting Sioux"
+        },
+        {
+            "id": "by a head coach in NBA history"
+        },
+        {
+            "id": "Tex Winter"
+        },
+        {
+            "id": "triangle offense system"
+        },
+        {
+            "id": "Shaquille O'Neal"
+        },
+        {
+            "id": "Pau Gasol"
+        },
+        {
+            "id": "Seattle SuperSonics"
+        },
+        {
+            "id": "eighth pick"
+        },
+        {
+            "id": "Olden Polynice"
+        },
+        {
+            "id": "NBA All-Defensive First Team"
+        },
+        {
+            "id": "Most Valuable Player of the 1994 All-Star Game"
+        },
+        {
+            "id": "two Olympic gold medals"
+        }
+    ],
+    "edges": [
+        {
+            "relation": "is_a",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 0,
+            "raw_subject": "Chicago Bulls",
+            "raw_object": "basketball_team",
+            "source": "Chicago Bulls",
+            "target": "Jordan",
+            "key": 0
+        },
+        {
+            "relation": "uses",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 0,
+            "raw_subject": "Chicago Bulls",
+            "raw_object": "basketball",
+            "source": "Chicago Bulls",
+            "target": "Jordan",
+            "key": 1
+        },
+        {
+            "relation": "retired_jersey_numbers",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 5,
+            "raw_subject": "Chicago Bulls",
+            "raw_object": "1 (Derrick Rose), 4 (Jerry Sloan), 10 (Bob Love), 23 (Michael Jordan), 33 (Scottie Pippen)",
+            "source": "Chicago Bulls",
+            "target": "Jordan",
+            "key": 2
+        },
+        {
+            "relation": "was_founded_on",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "January 16, 1966",
+            "source": "Chicago Bulls",
+            "target": "January 16, 1966",
+            "key": 0
+        },
+        {
+            "relation": "has_won",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "six NBA championships",
+            "source": "Chicago Bulls",
+            "target": "a championship",
+            "key": 0
+        },
+        {
+            "relation": "won_championships_in",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "1990s",
+            "source": "Chicago Bulls",
+            "target": "1991",
+            "key": 0
+        },
+        {
+            "relation": "won_championship_in",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "1991",
+            "source": "Chicago Bulls",
+            "target": "1991",
+            "key": 1
+        },
+        {
+            "relation": "won_championship_in",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "1992",
+            "source": "Chicago Bulls",
+            "target": "1991",
+            "key": 2
+        },
+        {
+            "relation": "won_championship_in",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "1993",
+            "source": "Chicago Bulls",
+            "target": "1991",
+            "key": 3
+        },
+        {
+            "relation": "won_championship_in",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "1996",
+            "source": "Chicago Bulls",
+            "target": "1991",
+            "key": 4
+        },
+        {
+            "relation": "won_championship_in",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "1997",
+            "source": "Chicago Bulls",
+            "target": "1991",
+            "key": 5
+        },
+        {
+            "relation": "won_championship_in",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 1,
+            "raw_subject": "The Chicago Bulls",
+            "raw_object": "1998",
+            "source": "Chicago Bulls",
+            "target": "1991",
+            "key": 6
+        },
+        {
+            "relation": "moved_to_year",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 6,
+            "raw_subject": "The Bulls",
+            "raw_object": "1994",
+            "source": "Chicago Bulls",
+            "target": "1991",
+            "key": 7
+        },
+        {
+            "relation": "played_at",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 6,
+            "raw_subject": "The Bulls",
+            "raw_object": "International Amphitheatre",
+            "source": "Chicago Bulls",
+            "target": "International Amphitheatre",
+            "key": 0
+        },
+        {
+            "relation": "played_at",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 6,
+            "raw_subject": "The Bulls",
+            "raw_object": "Chicago Stadium",
+            "source": "Chicago Bulls",
+            "target": "Chicago Stadium",
+            "key": 0
+        },
+        {
+            "relation": "moved_to",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 6,
+            "raw_subject": "The Bulls",
+            "raw_object": "United Center",
+            "source": "Chicago Bulls",
+            "target": "United Center",
+            "key": 0
+        },
+        {
+            "relation": "had_head_coach",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Detroit Pistons",
+            "raw_object": "Chuck Daly",
+            "source": "Chicago Bulls",
+            "target": "Chuck Daly",
+            "key": 0
+        },
+        {
+            "relation": "had_head_coach",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Chicago Bulls",
+            "raw_object": "Phil Jackson",
+            "source": "Chicago Bulls",
+            "target": "Phil Jackson",
+            "key": 0
+        },
+        {
+            "relation": "coached_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "Phil Jackson",
+            "source": "Jordan",
+            "target": "Phil Jackson",
+            "key": 0
+        },
+        {
+            "relation": "was_picked_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "Chicago Bulls",
+            "source": "Jordan",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "was_picked_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Derrick Rose",
+            "raw_object": "Chicago Bulls",
+            "source": "Jordan",
+            "target": "Chicago Bulls",
+            "key": 1
+        },
+        {
+            "relation": "retired_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 5,
+            "raw_subject": "1 (Derrick Rose)",
+            "raw_object": "Chicago Bulls",
+            "source": "Jordan",
+            "target": "Chicago Bulls",
+            "key": 2
+        },
+        {
+            "relation": "retired_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 5,
+            "raw_subject": "23 (Michael Jordan)",
+            "raw_object": "Chicago Bulls",
+            "source": "Jordan",
+            "target": "Chicago Bulls",
+            "key": 3
+        },
+        {
+            "relation": "selected_by",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "the Chicago Bulls",
+            "source": "Jordan",
+            "target": "Chicago Bulls",
+            "key": 4
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jordan",
+            "raw_object": "Chicago Bulls",
+            "source": "Jordan",
+            "target": "Chicago Bulls",
+            "key": 5
+        },
+        {
+            "relation": "with",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jordan",
+            "raw_object": "the Chicago Bulls",
+            "source": "Jordan",
+            "target": "Chicago Bulls",
+            "key": 6
+        },
+        {
+            "relation": "is_a",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 0,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "project",
+            "source": "Jordan",
+            "target": "project",
+            "key": 0
+        },
+        {
+            "relation": "uses",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 0,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "AI technology",
+            "source": "Jordan",
+            "target": "AI technology",
+            "key": 0
+        },
+        {
+            "relation": "attended_university",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "University of North Carolina at Chapel Hill",
+            "source": "Jordan",
+            "target": "Southeastern Oklahoma State University",
+            "key": 0
+        },
+        {
+            "relation": "attended_period",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "from 1981 to 1984",
+            "source": "Jordan",
+            "target": "1991",
+            "key": 0
+        },
+        {
+            "relation": "selected_in_draft",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "1984 NBA draft",
+            "source": "Jordan",
+            "target": "1984 NBA draft",
+            "key": 0
+        },
+        {
+            "relation": "draft_position",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Michael Jordan",
+            "raw_object": "third overall",
+            "source": "Jordan",
+            "target": "fifth overall",
+            "key": 0
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jordan",
+            "raw_object": "Washington Wizards",
+            "source": "Jordan",
+            "target": "New Jersey Nets",
+            "key": 0
+        },
+        {
+            "relation": "won",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jordan",
+            "raw_object": "six NBA championships",
+            "source": "Jordan",
+            "target": "a championship",
+            "key": 0
+        },
+        {
+            "relation": "won_award",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Jordan",
+            "raw_object": "five NBA Most Valuable Player awards",
+            "source": "Jordan",
+            "target": "a championship",
+            "key": 1
+        },
+        {
+            "relation": "named_Finals_MVP_in",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jordan",
+            "raw_object": "all six of those series",
+            "source": "Jordan",
+            "target": "all six of those series",
+            "key": 0
+        },
+        {
+            "relation": "during",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jordan",
+            "raw_object": "the first three-peat",
+            "source": "Jordan",
+            "target": "the first three-peat",
+            "key": 0
+        },
+        {
+            "relation": "during",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jordan",
+            "raw_object": "the second three-peat",
+            "source": "Jordan",
+            "target": "the first three-peat",
+            "key": 1
+        },
+        {
+            "relation": "won_award",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Jordan",
+            "raw_object": "1988 Defensive Player of the Year award",
+            "source": "Jordan",
+            "target": "1985 Rookie of the Year award",
+            "key": 0
+        },
+        {
+            "relation": "won_award",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Jordan",
+            "raw_object": "1985 Rookie of the Year award",
+            "source": "Jordan",
+            "target": "1985 Rookie of the Year award",
+            "key": 1
+        },
+        {
+            "relation": "led_league_in",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Jordan",
+            "raw_object": "scoring",
+            "source": "Jordan",
+            "target": "scoring",
+            "key": 0
+        },
+        {
+            "relation": "led_league_in",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Jordan",
+            "raw_object": "ten times",
+            "source": "Jordan",
+            "target": "ten times",
+            "key": 0
+        },
+        {
+            "relation": "set_record",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 3,
+            "raw_subject": "The 1995-96 team",
+            "raw_object": "72 regular-season wins",
+            "source": "1991",
+            "target": "72 regular-season wins",
+            "key": 0
+        },
+        {
+            "relation": "part_of",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1989",
+            "raw_object": "1989 and 1990",
+            "source": "1991",
+            "target": "1991",
+            "key": 0
+        },
+        {
+            "relation": "part_of",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1996",
+            "raw_object": "1996, 1997, and 1998",
+            "source": "1991",
+            "target": "1991",
+            "key": 1
+        },
+        {
+            "relation": "with",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1989 and 1990",
+            "raw_object": "Detroit Pistons",
+            "source": "1991",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "with",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1996, 1997, and 1998",
+            "raw_object": "Chicago Bulls",
+            "source": "1991",
+            "target": "Chicago Bulls",
+            "key": 1
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1991",
+            "raw_object": "a NBA championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 0
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1992",
+            "raw_object": "a NBA championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 1
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1993",
+            "raw_object": "a NBA championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 2
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1996",
+            "raw_object": "a NBA championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 3
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1997",
+            "raw_object": "a NBA championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 4
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1998",
+            "raw_object": "a NBA championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 5
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1991",
+            "raw_object": "a championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 6
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1992",
+            "raw_object": "a championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 7
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1993",
+            "raw_object": "a championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 8
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1996",
+            "raw_object": "a championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 9
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1997",
+            "raw_object": "a championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 10
+        },
+        {
+            "relation": "was",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1998",
+            "raw_object": "a championship",
+            "source": "1991",
+            "target": "a championship",
+            "key": 11
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1991",
+            "raw_object": "Jordan",
+            "source": "1991",
+            "target": "Jordan",
+            "key": 0
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1992",
+            "raw_object": "Jordan",
+            "source": "1991",
+            "target": "Jordan",
+            "key": 1
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1993",
+            "raw_object": "Jordan",
+            "source": "1991",
+            "target": "Jordan",
+            "key": 2
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1996",
+            "raw_object": "Jordan",
+            "source": "1991",
+            "target": "Jordan",
+            "key": 3
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1997",
+            "raw_object": "Jordan",
+            "source": "1991",
+            "target": "Jordan",
+            "key": 4
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1998",
+            "raw_object": "Jordan",
+            "source": "1991",
+            "target": "Jordan",
+            "key": 5
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1991",
+            "raw_object": "Pippen",
+            "source": "1991",
+            "target": "Pippen",
+            "key": 0
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1992",
+            "raw_object": "Pippen",
+            "source": "1991",
+            "target": "Pippen",
+            "key": 1
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1993",
+            "raw_object": "Pippen",
+            "source": "1991",
+            "target": "Pippen",
+            "key": 2
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1996",
+            "raw_object": "Pippen",
+            "source": "1991",
+            "target": "Pippen",
+            "key": 3
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1997",
+            "raw_object": "Pippen",
+            "source": "1991",
+            "target": "Pippen",
+            "key": 4
+        },
+        {
+            "relation": "won_by",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "1998",
+            "raw_object": "Pippen",
+            "source": "1991",
+            "target": "Pippen",
+            "key": 5
+        },
+        {
+            "relation": "includes_player",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 2,
+            "raw_subject": "The core roster during the first three-peat",
+            "raw_object": "Michael Jordan",
+            "source": "The core roster during the first three-peat",
+            "target": "Jordan",
+            "key": 0
+        },
+        {
+            "relation": "includes_player",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 2,
+            "raw_subject": "The core roster during the first three-peat",
+            "raw_object": "Scottie Pippen",
+            "source": "The core roster during the first three-peat",
+            "target": "Pippen",
+            "key": 0
+        },
+        {
+            "relation": "includes_player",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 2,
+            "raw_subject": "The core roster during the first three-peat",
+            "raw_object": "Horace Grant",
+            "source": "The core roster during the first three-peat",
+            "target": "Horace Grant",
+            "key": 0
+        },
+        {
+            "relation": "coached_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 2,
+            "raw_subject": "The core roster during the first three-peat",
+            "raw_object": "Phil Jackson",
+            "source": "The core roster during the first three-peat",
+            "target": "Phil Jackson",
+            "key": 0
+        },
+        {
+            "relation": "coached_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "Phil Jackson",
+            "source": "Pippen",
+            "target": "Phil Jackson",
+            "key": 0
+        },
+        {
+            "relation": "was_picked_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "Chicago Bulls",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "retired_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 5,
+            "raw_subject": "33 (Scottie Pippen)",
+            "raw_object": "Chicago Bulls",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 1
+        },
+        {
+            "relation": "traded_to_team",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "Chicago Bulls",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 2
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Pippen",
+            "raw_object": "Chicago Bulls",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 3
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Pippen",
+            "raw_object": "Houston Rockets",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 4
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Pippen",
+            "raw_object": "Portland Trail Blazers",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 5
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Pippen",
+            "raw_object": "Chicago Bulls",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 6
+        },
+        {
+            "relation": "had_championship_seasons_with",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Pippen",
+            "raw_object": "Chicago Bulls",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 7
+        },
+        {
+            "relation": "with",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Pippen",
+            "raw_object": "the Chicago Bulls",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 8
+        },
+        {
+            "relation": "was_retired_in",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Pippen",
+            "raw_object": "Chicago Bulls jersey number 33",
+            "source": "Pippen",
+            "target": "Chicago Bulls",
+            "key": 9
+        },
+        {
+            "relation": "is_a",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 0,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "professional basketball player",
+            "source": "Pippen",
+            "target": "Jordan",
+            "key": 0
+        },
+        {
+            "relation": "attended_university",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "University of Central Arkansas",
+            "source": "Pippen",
+            "target": "Southeastern Oklahoma State University",
+            "key": 0
+        },
+        {
+            "relation": "selected_in_1987_NBA_draft",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "fifth overall",
+            "source": "Pippen",
+            "target": "fifth overall",
+            "key": 0
+        },
+        {
+            "relation": "by_team",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "Seattle SuperSonics",
+            "source": "Pippen",
+            "target": "Seattle SuperSonics",
+            "key": 0
+        },
+        {
+            "relation": "traded_for_pick",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "eighth pick",
+            "source": "Pippen",
+            "target": "eighth pick",
+            "key": 0
+        },
+        {
+            "relation": "traded_for_player",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Scottie Pippen",
+            "raw_object": "Olden Polynice",
+            "source": "Pippen",
+            "target": "Olden Polynice",
+            "key": 0
+        },
+        {
+            "relation": "won",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Pippen",
+            "raw_object": "six NBA championships",
+            "source": "Pippen",
+            "target": "a championship",
+            "key": 0
+        },
+        {
+            "relation": "was_selected_to",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Pippen",
+            "raw_object": "NBA All-Defensive First Team",
+            "source": "Pippen",
+            "target": "NBA All-Defensive First Team",
+            "key": 0
+        },
+        {
+            "relation": "was_named",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Pippen",
+            "raw_object": "Most Valuable Player of the 1994 All-Star Game",
+            "source": "Pippen",
+            "target": "Most Valuable Player of the 1994 All-Star Game",
+            "key": 0
+        },
+        {
+            "relation": "won",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Pippen",
+            "raw_object": "two Olympic gold medals",
+            "source": "Pippen",
+            "target": "two Olympic gold medals",
+            "key": 0
+        },
+        {
+            "relation": "coaches",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "The core roster during the second three-peat",
+            "source": "Phil Jackson",
+            "target": "The core roster during the first three-peat",
+            "key": 0
+        },
+        {
+            "relation": "position",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "head coach",
+            "source": "Phil Jackson",
+            "target": "head coach",
+            "key": 0
+        },
+        {
+            "relation": "position",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "head coach",
+            "source": "Phil Jackson",
+            "target": "head coach",
+            "key": 1
+        },
+        {
+            "relation": "team",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "Chicago Bulls",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "with_team",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "Chicago Bulls",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 1
+        },
+        {
+            "relation": "joined",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jackson",
+            "raw_object": "the Chicago Bulls",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 2
+        },
+        {
+            "relation": "became_assistant_coach_of",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jackson",
+            "raw_object": "the Chicago Bulls",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 3
+        },
+        {
+            "relation": "became_head_coach_of",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jackson",
+            "raw_object": "the Chicago Bulls",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 4
+        },
+        {
+            "relation": "coached",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jackson",
+            "raw_object": "the Los Angeles Lakers",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 5
+        },
+        {
+            "relation": "coached",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jackson",
+            "raw_object": "the Los Angeles Lakers (twice)",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 6
+        },
+        {
+            "relation": "coached",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jackson",
+            "raw_object": "the Los Angeles Lakers (1999-2004) and (2005-2011)",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 7
+        },
+        {
+            "relation": "with",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jackson",
+            "raw_object": "the Chicago Bulls",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 8
+        },
+        {
+            "relation": "with",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jackson",
+            "raw_object": "the Los Angeles Lakers",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 9
+        },
+        {
+            "relation": "head_coach_of",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jackson",
+            "raw_object": "the Chicago Bulls",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 10
+        },
+        {
+            "relation": "head_coach_of",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jackson",
+            "raw_object": "the Los Angeles Lakers",
+            "source": "Phil Jackson",
+            "target": "Chicago Bulls",
+            "key": 11
+        },
+        {
+            "relation": "leads",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 0,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "Project Phoenix",
+            "source": "Phil Jackson",
+            "target": "Project Phoenix",
+            "key": 0
+        },
+        {
+            "relation": "attended_university",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "University of North Dakota",
+            "source": "Phil Jackson",
+            "target": "Southeastern Oklahoma State University",
+            "key": 0
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "Fighting Sioux",
+            "source": "Phil Jackson",
+            "target": "Fighting Sioux",
+            "key": 0
+        },
+        {
+            "relation": "played_in_nba_team",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "New York Knicks",
+            "source": "Phil Jackson",
+            "target": "New Jersey Nets",
+            "key": 0
+        },
+        {
+            "relation": "played_in_nba_team",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "New Jersey Nets",
+            "source": "Phil Jackson",
+            "target": "New Jersey Nets",
+            "key": 1
+        },
+        {
+            "relation": "won_championships_as_player",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "1970",
+            "source": "Phil Jackson",
+            "target": "1991",
+            "key": 0
+        },
+        {
+            "relation": "won_championships_as_player",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "1973",
+            "source": "Phil Jackson",
+            "target": "1991",
+            "key": 1
+        },
+        {
+            "relation": "held_role_of_head_coach_for",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Jackson",
+            "raw_object": "1989-1998",
+            "source": "Phil Jackson",
+            "target": "1991",
+            "key": 2
+        },
+        {
+            "relation": "won",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jackson",
+            "raw_object": "eleven NBA championships",
+            "source": "Phil Jackson",
+            "target": "a championship",
+            "key": 0
+        },
+        {
+            "relation": "won_most",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Jackson",
+            "raw_object": "by a head coach in NBA history",
+            "source": "Phil Jackson",
+            "target": "by a head coach in NBA history",
+            "key": 0
+        },
+        {
+            "relation": "was_head_coach_for",
+            "source_doc_id": "scottie_pippen.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Phil Jackson",
+            "raw_object": "Pippen",
+            "source": "Phil Jackson",
+            "target": "Pippen",
+            "key": 0
+        },
+        {
+            "relation": "coached_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Dennis Rodman",
+            "raw_object": "Phil Jackson}, {",
+            "source": "Rodman",
+            "target": "Phil Jackson",
+            "key": 0
+        },
+        {
+            "relation": "is_a",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 0,
+            "raw_subject": "Dennis Rodman",
+            "raw_object": "basketball player",
+            "source": "Rodman",
+            "target": "Jordan",
+            "key": 0
+        },
+        {
+            "relation": "played_position",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Dennis Rodman",
+            "raw_object": "college basketball",
+            "source": "Rodman",
+            "target": "Jordan",
+            "key": 1
+        },
+        {
+            "relation": "attended_college",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Dennis Rodman",
+            "raw_object": "Southeastern Oklahoma State University",
+            "source": "Rodman",
+            "target": "Southeastern Oklahoma State University",
+            "key": 0
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Dennis Rodman",
+            "raw_object": "Southeastern Oklahoma State University",
+            "source": "Rodman",
+            "target": "Southeastern Oklahoma State University",
+            "key": 1
+        },
+        {
+            "relation": "selected_in_draft",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Dennis Rodman",
+            "raw_object": "1986 NBA draft",
+            "source": "Rodman",
+            "target": "1984 NBA draft",
+            "key": 0
+        },
+        {
+            "relation": "drafted_by",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Dennis Rodman",
+            "raw_object": "Detroit Pistons",
+            "source": "Rodman",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Rodman",
+            "raw_object": "Detroit Pistons",
+            "source": "Rodman",
+            "target": "Chicago Bulls",
+            "key": 1
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Rodman",
+            "raw_object": "San Antonio Spurs",
+            "source": "Rodman",
+            "target": "Chicago Bulls",
+            "key": 2
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Rodman",
+            "raw_object": "Chicago Bulls",
+            "source": "Rodman",
+            "target": "Chicago Bulls",
+            "key": 3
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Rodman",
+            "raw_object": "Los Angeles Lakers",
+            "source": "Rodman",
+            "target": "Chicago Bulls",
+            "key": 4
+        },
+        {
+            "relation": "played_for",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Rodman",
+            "raw_object": "Dallas Mavericks",
+            "source": "Rodman",
+            "target": "Chicago Bulls",
+            "key": 5
+        },
+        {
+            "relation": "won",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 3,
+            "raw_subject": "Rodman",
+            "raw_object": "five NBA championships",
+            "source": "Rodman",
+            "target": "a championship",
+            "key": 0
+        },
+        {
+            "relation": "won_NBA_Defensive_Player_of_the_Year_award_in_1990",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Rodman",
+            "raw_object": "1990",
+            "source": "Rodman",
+            "target": "1991",
+            "key": 0
+        },
+        {
+            "relation": "won_NBA_Defensive_Player_of_the_Year_award_in_1991",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Rodman",
+            "raw_object": "1991",
+            "source": "Rodman",
+            "target": "1991",
+            "key": 1
+        },
+        {
+            "relation": "led_NBA_in_rebounding_seven_consecutive_seasons",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Rodman",
+            "raw_object": "1992_to_1998",
+            "source": "Rodman",
+            "target": "1991",
+            "key": 2
+        },
+        {
+            "relation": "named_to_All-Defensive_First_Team",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Rodman",
+            "raw_object": "seven_times",
+            "source": "Rodman",
+            "target": "ten times",
+            "key": 0
+        },
+        {
+            "relation": "record",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 3,
+            "raw_subject": "72 regular-season wins",
+            "raw_object": "NBA record",
+            "source": "72 regular-season wins",
+            "target": "NBA record",
+            "key": 0
+        },
+        {
+            "relation": "retired_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 5,
+            "raw_subject": "4 (Jerry Sloan)",
+            "raw_object": "Chicago Bulls",
+            "source": "4 (Jerry Sloan)",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "retired_by",
+            "source_doc_id": "chicago_bulls.md",
+            "source_chunk_index": 5,
+            "raw_subject": "10 (Bob Love)",
+            "raw_object": "Chicago Bulls",
+            "source": "10 (Bob Love)",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "produced",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 1,
+            "raw_subject": "Southeastern Oklahoma State University",
+            "raw_object": "Dennis Rodman",
+            "source": "Southeastern Oklahoma State University",
+            "target": "Rodman",
+            "key": 0
+        },
+        {
+            "relation": "position",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Chuck Daly",
+            "raw_object": "head coach",
+            "source": "Chuck Daly",
+            "target": "head coach",
+            "key": 0
+        },
+        {
+            "relation": "team",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Chuck Daly",
+            "raw_object": "Detroit Pistons",
+            "source": "Chuck Daly",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "position",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Bob Hill",
+            "raw_object": "head coach",
+            "source": "Bob Hill",
+            "target": "head coach",
+            "key": 0
+        },
+        {
+            "relation": "team",
+            "source_doc_id": "dennis_rodman.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Bob Hill",
+            "raw_object": "San Antonio Spurs",
+            "source": "Bob Hill",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "position",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Doug Collins",
+            "raw_object": "head coach",
+            "source": "Doug Collins",
+            "target": "head coach",
+            "key": 0
+        },
+        {
+            "relation": "with_team",
+            "source_doc_id": "michael_jordan.md",
+            "source_chunk_index": 2,
+            "raw_subject": "Doug Collins",
+            "raw_object": "Chicago Bulls",
+            "source": "Doug Collins",
+            "target": "Chicago Bulls",
+            "key": 0
+        },
+        {
+            "relation": "served_as",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Tex Winter",
+            "raw_object": "lead assistant coach",
+            "source": "Tex Winter",
+            "target": "head coach",
+            "key": 0
+        },
+        {
+            "relation": "architect_of",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Tex Winter",
+            "raw_object": "triangle offense system",
+            "source": "Tex Winter",
+            "target": "triangle offense system",
+            "key": 0
+        },
+        {
+            "relation": "coached_with",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Tex Winter",
+            "raw_object": "Michael Jordan",
+            "source": "Tex Winter",
+            "target": "Jordan",
+            "key": 0
+        },
+        {
+            "relation": "coached_with",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Tex Winter",
+            "raw_object": "Kobe Bryant",
+            "source": "Tex Winter",
+            "target": "Jordan",
+            "key": 1
+        },
+        {
+            "relation": "coached_with",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Tex Winter",
+            "raw_object": "Scottie Pippen",
+            "source": "Tex Winter",
+            "target": "Pippen",
+            "key": 0
+        },
+        {
+            "relation": "coached_with",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Tex Winter",
+            "raw_object": "Shaquille O'Neal",
+            "source": "Tex Winter",
+            "target": "Shaquille O'Neal",
+            "key": 0
+        },
+        {
+            "relation": "coached_with",
+            "source_doc_id": "phil_jackson.md",
+            "source_chunk_index": 4,
+            "raw_subject": "Tex Winter",
+            "raw_object": "Pau Gasol",
+            "source": "Tex Winter",
+            "target": "Pau Gasol",
+            "key": 0
+        }
+    ]
+}

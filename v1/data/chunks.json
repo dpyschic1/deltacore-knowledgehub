@@ -1,0 +1,218 @@
+[
+    {
+        "doc_id": "chicago_bulls.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\chicago_bulls.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 17,
+        "text": "# Chicago Bulls\n\n\n\n"
+    },
+    {
+        "doc_id": "chicago_bulls.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\chicago_bulls.md",
+        "chunk_index": 1,
+        "start_char": 17,
+        "end_char": 194,
+        "text": "## Franchise History\n\n\n\nThe Chicago Bulls were founded on January 16, 1966. The team has won six\nNBA championships, all during the 1990s: 1991, 1992, 1993, 1996, 1997, and\n1998.\n\n"
+    },
+    {
+        "doc_id": "chicago_bulls.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\chicago_bulls.md",
+        "chunk_index": 2,
+        "start_char": 194,
+        "end_char": 351,
+        "text": "## First Three-Peat (1991-1993)\n\n\n\nThe core roster during the first three-peat was Michael Jordan, Scottie\nPippen, and Horace Grant, coached by Phil Jackson.\n\n"
+    },
+    {
+        "doc_id": "chicago_bulls.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\chicago_bulls.md",
+        "chunk_index": 3,
+        "start_char": 351,
+        "end_char": 621,
+        "text": "## Second Three-Peat (1996-1998)\n\n\n\nThe core roster during the second three-peat was Michael Jordan, Scottie\nPippen, and Dennis Rodman, coached by Phil Jackson. The 1995-96 team set an\nNBA record with 72 regular-season wins, a record that stood until the\n2015-16 season.\n\n"
+    },
+    {
+        "doc_id": "chicago_bulls.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\chicago_bulls.md",
+        "chunk_index": 4,
+        "start_char": 621,
+        "end_char": 831,
+        "text": "## Draft History\n\n\n\nNotable draft picks in franchise history include Michael Jordan (1984, 3rd\noverall), Scottie Pippen (1987, 5th overall, acquired via draft-night\ntrade), and Derrick Rose (2008, 1st overall).\n\n"
+    },
+    {
+        "doc_id": "chicago_bulls.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\chicago_bulls.md",
+        "chunk_index": 5,
+        "start_char": 831,
+        "end_char": 1000,
+        "text": "## Retired Numbers\n\n\n\nThe Chicago Bulls have retired five jersey numbers: 1 (Derrick Rose), 4\n(Jerry Sloan), 10 (Bob Love), 23 (Michael Jordan), and 33 (Scottie Pippen).\n\n"
+    },
+    {
+        "doc_id": "chicago_bulls.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\chicago_bulls.md",
+        "chunk_index": 6,
+        "start_char": 1000,
+        "end_char": 1126,
+        "text": "## Arenas\n\n\n\nThe Bulls played at the International Amphitheatre and Chicago Stadium\nbefore moving to the United Center in 1994.\n"
+    },
+    {
+        "doc_id": "dennis_rodman.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\dennis_rodman.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 17,
+        "text": "# Dennis Rodman\n\n\n\n"
+    },
+    {
+        "doc_id": "dennis_rodman.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\dennis_rodman.md",
+        "chunk_index": 1,
+        "start_char": 17,
+        "end_char": 254,
+        "text": "## Background\n\n\n\nDennis Rodman played college basketball at Southeastern Oklahoma State\nUniversity from 1983 to 1986, where he was a three-time NAIA All-American.\nHe was selected 27th overall in the 1986 NBA draft by the Detroit Pistons.\n\n"
+    },
+    {
+        "doc_id": "dennis_rodman.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\dennis_rodman.md",
+        "chunk_index": 2,
+        "start_char": 254,
+        "end_char": 601,
+        "text": "## NBA Career\n\n\n\nRodman played for the Detroit Pistons from 1986 to 1993, the San Antonio\nSpurs from 1993 to 1995, the Chicago Bulls from 1995 to 1998, the Los\nAngeles Lakers in 1999, and the Dallas Mavericks in 2000. His head coach in\nDetroit was Chuck Daly; his head coach in San Antonio was Bob Hill; his\nhead coach in Chicago was Phil Jackson.\n\n"
+    },
+    {
+        "doc_id": "dennis_rodman.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\dennis_rodman.md",
+        "chunk_index": 3,
+        "start_char": 601,
+        "end_char": 802,
+        "text": "## Championships\n\n\n\nRodman won five NBA championships: 1989 and 1990 with the Detroit Pistons\nunder head coach Chuck Daly, and 1996, 1997, and 1998 with the Chicago\nBulls under head coach Phil Jackson.\n\n"
+    },
+    {
+        "doc_id": "dennis_rodman.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\dennis_rodman.md",
+        "chunk_index": 4,
+        "start_char": 802,
+        "end_char": 1019,
+        "text": "## Awards\n\n\n\nRodman led the NBA in rebounding seven consecutive seasons, from 1992 to\n1998. He won the NBA Defensive Player of the Year award in 1990 and 1991,\nand was named to the All-Defensive First Team seven times.\n"
+    },
+    {
+        "doc_id": "michael_jordan.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\michael_jordan.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 18,
+        "text": "# Michael Jordan\n\n\n\n"
+    },
+    {
+        "doc_id": "michael_jordan.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\michael_jordan.md",
+        "chunk_index": 1,
+        "start_char": 18,
+        "end_char": 199,
+        "text": "## Background\n\n\n\nMichael Jordan attended the University of North Carolina at Chapel Hill\nfrom 1981 to 1984. He was selected third overall in the 1984 NBA draft by\nthe Chicago Bulls.\n\n"
+    },
+    {
+        "doc_id": "michael_jordan.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\michael_jordan.md",
+        "chunk_index": 2,
+        "start_char": 199,
+        "end_char": 434,
+        "text": "## NBA Career\n\n\n\nJordan played for the Chicago Bulls from 1984 to 1993, and again from 1995\nto 1998. He also played for the Washington Wizards from 2001 to 2003. His\nhead coaches with the Bulls were Doug Collins and later Phil Jackson.\n\n"
+    },
+    {
+        "doc_id": "michael_jordan.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\michael_jordan.md",
+        "chunk_index": 3,
+        "start_char": 434,
+        "end_char": 667,
+        "text": "## Championships\n\n\n\nJordan won six NBA championships with the Chicago Bulls: 1991, 1992, and\n1993 during the first three-peat, and 1996, 1997, and 1998 during the\nsecond three-peat. He was named Finals MVP in all six of those series.\n\n"
+    },
+    {
+        "doc_id": "michael_jordan.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\michael_jordan.md",
+        "chunk_index": 4,
+        "start_char": 667,
+        "end_char": 851,
+        "text": "## Awards\n\n\n\nJordan won five NBA Most Valuable Player awards, the 1988 Defensive Player\nof the Year award, and the 1985 Rookie of the Year award. He led the league\nin scoring ten times.\n"
+    },
+    {
+        "doc_id": "phil_jackson.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\phil_jackson.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 16,
+        "text": "# Phil Jackson\n\n\n\n"
+    },
+    {
+        "doc_id": "phil_jackson.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\phil_jackson.md",
+        "chunk_index": 1,
+        "start_char": 16,
+        "end_char": 318,
+        "text": "## Background\n\n\n\nPhil Jackson attended the University of North Dakota from 1964 to 1967,\nplaying for the Fighting Sioux. He played in the NBA as a power forward for\nthe New York Knicks from 1967 to 1978 and the New Jersey Nets from 1978 to\n1980, winning two championships as a player, in 1970 and 1973.\n\n"
+    },
+    {
+        "doc_id": "phil_jackson.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\phil_jackson.md",
+        "chunk_index": 2,
+        "start_char": 318,
+        "end_char": 550,
+        "text": "## Coaching Career\n\n\n\nJackson joined the Chicago Bulls as an assistant coach in 1987 and became\nhead coach in 1989, a role he held through 1998. He later coached the Los\nAngeles Lakers from 1999 to 2004, and again from 2005 to 2011.\n\n"
+    },
+    {
+        "doc_id": "phil_jackson.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\phil_jackson.md",
+        "chunk_index": 3,
+        "start_char": 550,
+        "end_char": 824,
+        "text": "## Championships\n\n\n\nAs a head coach, Jackson won eleven NBA championships: six with the\nChicago Bulls (1991, 1992, 1993, 1996, 1997, 1998) and five with the Los\nAngeles Lakers (2000, 2001, 2002, 2009, 2010). This is the most\nchampionships won by a head coach in NBA history.\n\n"
+    },
+    {
+        "doc_id": "phil_jackson.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\phil_jackson.md",
+        "chunk_index": 4,
+        "start_char": 824,
+        "end_char": 1134,
+        "text": "## Coaching Staff and Players\n\n\n\nTex Winter served as Jackson's lead assistant coach in Chicago and was the\narchitect of the triangle offense system Jackson's teams used. Jackson\ncoached Michael Jordan and Scottie Pippen in Chicago, and later coached\nShaquille O'Neal, Kobe Bryant, and Pau Gasol in Los Angeles.\n"
+    },
+    {
+        "doc_id": "scottie_pippen.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\scottie_pippen.md",
+        "chunk_index": 0,
+        "start_char": 0,
+        "end_char": 18,
+        "text": "# Scottie Pippen\n\n\n\n"
+    },
+    {
+        "doc_id": "scottie_pippen.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\scottie_pippen.md",
+        "chunk_index": 1,
+        "start_char": 18,
+        "end_char": 292,
+        "text": "## Background\n\n\n\nScottie Pippen attended the University of Central Arkansas from 1983 to\n1987. He was selected fifth overall in the 1987 NBA draft by the Seattle\nSuperSonics, and was traded to the Chicago Bulls on draft night in exchange\nfor the eighth pick, Olden Polynice.\n\n"
+    },
+    {
+        "doc_id": "scottie_pippen.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\scottie_pippen.md",
+        "chunk_index": 2,
+        "start_char": 292,
+        "end_char": 575,
+        "text": "## NBA Career\n\n\n\nPippen played for the Chicago Bulls from 1987 to 1998, the Houston Rockets\nin 1999, the Portland Trail Blazers from 1999 to 2003, and returned to the\nChicago Bulls from 2003 to 2004. His head coach for all six of his\nchampionship seasons in Chicago was Phil Jackson.\n\n"
+    },
+    {
+        "doc_id": "scottie_pippen.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\scottie_pippen.md",
+        "chunk_index": 3,
+        "start_char": 575,
+        "end_char": 752,
+        "text": "## Championships\n\n\n\nPippen won six NBA championships, all with the Chicago Bulls: 1991, 1992,\n1993, 1996, 1997, and 1998. He did not win a championship with Houston or\nPortland.\n\n"
+    },
+    {
+        "doc_id": "scottie_pippen.md",
+        "source_path": "D:\\PythonBasedRag\\docs\\scottie_pippen.md",
+        "chunk_index": 4,
+        "start_char": 752,
+        "end_char": 1026,
+        "text": "## Awards\n\n\n\nPippen was a seven-time NBA All-Star and was named Most Valuable Player of\nthe 1994 All-Star Game. He was selected to the NBA All-Defensive First Team\neight times and won two Olympic gold medals, in 1992 and 1996. The Chicago\nBulls retired his jersey number, 33.\n"
+    }
+]

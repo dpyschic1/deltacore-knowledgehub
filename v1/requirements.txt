@@ -1,0 +1,14 @@
+sentence-transformers==6.1.0
+numpy==2.5.3
+requests==2.34.2
+networkx==3.7
+llama-index-core==0.14.25
+llama-index-llms-ollama==0.11.0
+llama-index-embeddings-huggingface==0.8.0
+llama-index-retrievers-bm25==0.8.0
+
+# llama-index-retrievers-bm25 pins PyStemmer<3, which has no prebuilt wheel
+# for Python 3.14 and requires Visual C++ Build Tools to compile. Installing
+# this exact version directly (it has a prebuilt cp314 wheel) satisfies the
+# package's actual functional needs despite the conservative upper pin.
+PyStemmer==3.1.0
