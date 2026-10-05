@@ -33,13 +33,17 @@ $env:GROQ_API_KEY = "your-key-here"
 ```
 docs/   source documents (.md) to index
 src/    pipeline scripts
-data/   generated artifacts (chunks, Chroma vector DB) — reproducible from docs/
+data/   generated artifacts (chunks, Chroma vector DB) — gitignored entirely,
+        reproducible by rerunning the pipeline scripts against docs/
 ```
+
+`docs/hotpotqa_*.md` is also gitignored — those are mechanically regenerable via `import_hotpotqa.py` pulling from a stable public dataset, not hand-authored content. The original hand-verified docs (`michael_jordan.md` etc.) stay tracked.
 
 ## Pipeline
 
 Run in order from `src/` whenever `docs/` changes:
 
+0. *(optional)* `python import_hotpotqa.py` — pull a batch of Wikipedia paragraphs + their multi-hop question/answer annotations from the [HotpotQA](https://hotpotqa.github.io/) dataset (via Hugging Face, no manual download needed) into `docs/hotpotqa_*.md`, for scaling up the corpus beyond the hand-authored docs. Tune `NUM_QUESTIONS` at the top of the script to control how much it pulls in.
 1. `python ingest.py` — chunk documents, generate a situating context blurb per chunk (via LLM), write `data/chunks.json`
 2. `python embed.py` — embed `context + text` per chunk into a persistent Chroma collection at `data/chroma_db/`
 

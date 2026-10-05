@@ -3,3 +3,4 @@ requests==2.34.2
 chromadb==1.5.9
 bm25s==0.3.12
 deepeval==4.2.8
+datasets==5.0.1

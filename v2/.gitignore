@@ -1,5 +1,11 @@
-# Generated vector DB (binary, regenerable from data/chunks.json via embed.py)
-data/chroma_db/
+# Everything under data/ is generated/reproducible from scripts + docs/ or an
+# external dataset -- nothing here is hand-authored source content.
+data/
 
 # DeepEval's local run-history/telemetry cache
 src/.deepeval/
+
+# HotpotQA-derived docs: mechanically regenerable via import_hotpotqa.py
+# pulling from the stable, versioned HF dataset -- not hand-authored content,
+# so not worth tracking. The original hand-verified docs stay tracked.
+docs/hotpotqa_*.md
