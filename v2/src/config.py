@@ -18,8 +18,8 @@ MODEL_NAMES = {
         "eval": "llama3.1:8b",
     },
     "groq": {
-        "context": "openai/gpt-oss-120b",
-        "classify": "openai/gpt-oss-120b",
+        "context": "openai/gpt-oss-20b",
+        "classify": "openai/gpt-oss-20b",
         "generation": "openai/gpt-oss-120b",
         "verify": "openai/gpt-oss-120b",
         "eval": "openai/gpt-oss-120b",

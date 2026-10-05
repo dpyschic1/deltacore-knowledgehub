@@ -1,8 +1,12 @@
 import json
 import re
+import time
 from pathlib import Path
-from config import CHUNK_SIZE, CHUNK_OVERLAP, CONTEXT_PROMPT_TEMPLATE
+from config import CHUNK_SIZE, CHUNK_OVERLAP, CONTEXT_PROMPT_TEMPLATE, LLM_PROVIDER
 from llm_client import chat
+
+# For pacing requests when sending calls to external providers
+SECONDS_BETWEEN_CONTEXT_CALLS = 3.0 if LLM_PROVIDER == "groq" else 0
 
 HEADING_RE = re.compile(r'^#{1,6}\s+.*$', re.MULTILINE)
 
@@ -80,26 +84,51 @@ def generate_context(whole_document_text, chunk_text):
 
 
 def main():
+    targetPath = Path(__file__).resolve().parent.parent / "data" / "chunks.json"
+
+    existing_by_key = {}
+    if targetPath.exists():
+        with open(targetPath, "r", encoding="utf-8") as f:
+            for c in json.load(f):
+                existing_by_key[(c['doc_id'], c['chunk_index'], c['text'])] = c
+        print(f"Found {len(existing_by_key)} existing chunks -- will reuse any that are unchanged.")
+
     all_chunks = []
+
+    def save_progress():
+        with open(targetPath, "w", encoding="utf-8") as target:
+            json.dump(all_chunks, target, indent=4, ensure_ascii=False)
+
     path = Path(__file__).resolve().parent.parent / "docs"
     for file in (list(path.glob('**/*.md')) + list(path.glob('**/*.txt'))):
         with file.open(encoding="utf-8") as f:
             text = f.read()
             chunked = chunk_document(text, file.suffix == '.md', CHUNK_SIZE, CHUNK_OVERLAP)
             for i,p in enumerate(chunked):
-                print(f"Generating context: {file.name} chunk {i}")
-                generated_blurb = generate_context(text, p['chunk'])
-                all_chunks.append({
-                    'doc_id': str(file.relative_to(path)),
-                    'source_path': str(file.absolute()),
-                    'chunk_index': i,
-                    'start_char': p['start_char'],
-                    'end_char': p['end_char'],
-                    'text': f"{p['heading']}\n\n{p['chunk']}" if p['heading'] else p['chunk'],
-                    'context': generated_blurb
-                })
-    targetPath = Path(__file__).resolve().parent.parent / "data" / "chunks.json"
-    with open(targetPath, "w", encoding="utf-8") as target:
-        json.dump(all_chunks, target, indent=4,ensure_ascii=False)
+                doc_id = str(file.relative_to(path))
+                chunk_text_value = f"{p['heading']}\n\n{p['chunk']}" if p['heading'] else p['chunk']
+                key = (doc_id, i, chunk_text_value)
+
+                if key in existing_by_key:
+                    print(f"Reusing existing context: {file.name} chunk {i}")
+                    all_chunks.append(existing_by_key[key])
+                else:
+                    print(f"Generating context: {file.name} chunk {i}")
+                    generated_blurb = generate_context(text, p['chunk'])
+                    if SECONDS_BETWEEN_CONTEXT_CALLS:
+                        time.sleep(SECONDS_BETWEEN_CONTEXT_CALLS)
+                    all_chunks.append({
+                        'doc_id': doc_id,
+                        'source_path': str(file.absolute()),
+                        'chunk_index': i,
+                        'start_char': p['start_char'],
+                        'end_char': p['end_char'],
+                        'text': chunk_text_value,
+                        'context': generated_blurb
+                    })
+
+                save_progress()
+
+    save_progress()
 
 main()

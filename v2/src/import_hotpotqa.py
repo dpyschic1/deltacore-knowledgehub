@@ -6,19 +6,8 @@ from datasets import load_dataset
 DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
 CANDIDATE_QUESTIONS_PATH = Path(__file__).resolve().parent.parent / "data" / "hotpotqa_candidate_questions.json"
 
-# Rough starting point for ~500 chunks after ingest.py's chunker runs. Each
-# question drags in ~10 context paragraphs (2 gold + ~8 distractor), with
-# light overlap across questions, and most paragraphs are short enough to
-# become a single chunk -- but this is an estimate, not exact. After running
-# this + ingest.py, check data/chunks.json's length and adjust NUM_QUESTIONS
-# up or down, then rerun both.
-NUM_QUESTIONS = 50
+NUM_QUESTIONS = 40
 
-# How many (question, answer) pairs to export for manual review as candidate
-# additions to deepeval_eval.py's TEST_QUESTIONS. Spot-check each one against
-# its supporting_titles' docs before trusting it -- same rigor as the
-# hand-verified Chicago Bulls questions, even though HotpotQA's annotations
-# are independently constructed, not something we authored ourselves.
 NUM_CANDIDATE_TEST_QUESTIONS = 10
 
 
@@ -41,11 +30,17 @@ def main():
                 unique_titles[title] = sentences
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
+
+    removed = 0
+    for old_file in DOCS_DIR.glob("hotpotqa_*.md"):
+        old_file.unlink()
+        removed += 1
+    if removed:
+        print(f"Removed {removed} hotpotqa_* docs from a previous run.")
+
     written = 0
     for title, sentences in unique_titles.items():
-        # HotpotQA's sentence splits already carry their own spacing, so a
-        # plain join reconstructs the original paragraph -- no extra spaces
-        # need to be inserted between them.
+
         paragraph = "".join(sentences).strip()
         if not paragraph:
             continue
