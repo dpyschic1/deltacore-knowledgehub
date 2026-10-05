@@ -43,3 +43,23 @@ Run in order from `src/` whenever `docs/` changes:
 1. `python ingest.py` — chunk documents, generate a situating context blurb per chunk (via LLM), write `data/chunks.json`
 2. `python embed.py` — embed `context + text` per chunk into a persistent Chroma collection at `data/chroma_db/`
 
+## Asking a question
+
+```powershell
+python ask.py "your question here"
+```
+
+Runs the question through adaptive routing + hybrid retrieval, generates a grounded answer with inline `[n]` citations, and verifies the final answer's citations against their sources.
+
+## Evaluation
+
+```powershell
+python deepeval_eval.py
+```
+
+Runs a small hand-verified question set through the full pipeline and scores it with Faithfulness, Answer Relevancy, Contextual Precision, and Contextual Recall. If using Groq, these env vars help avoid free-tier rate-limit failures on top of the pacing already built into the script:
+```powershell
+$env:DEEPEVAL_RETRY_MAX_ATTEMPTS = "5"
+$env:DEEPEVAL_RETRY_CAP_SECONDS = "65"
+```
+
