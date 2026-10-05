@@ -1,9 +1,31 @@
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
-GENERATION_MODEL_NAME = "qwen2.5:3b"
-VERIFY_MODEL_NAME = "llama3.1:8b"
+LLM_PROVIDER = "groq"  # "ollama" or "groq" -- the single switch between local and hosted
+
+OLLAMA_BASE_URL = "https://unleaded-alto-sesame.ngrok-free.dev"
+OLLAMA_URL = f"{OLLAMA_BASE_URL}/api/chat"
+NGROK_HEADERS = {"ngrok-skip-browser-warning": "true"}
+
+GROQ_BASE_URL = "https://api.groq.com/openai/v1"
+
+MODEL_NAMES = {
+    "ollama": {
+        "context": "qwen2.5:3b",
+        "classify": "qwen2.5:3b",
+        "generation": "qwen2.5:3b",
+        "verify": "llama3.1:8b",
+        "eval": "llama3.1:8b",
+    },
+    "groq": {
+        "context": "openai/gpt-oss-120b",
+        "classify": "openai/gpt-oss-120b",
+        "generation": "openai/gpt-oss-120b",
+        "verify": "openai/gpt-oss-120b",
+        "eval": "openai/gpt-oss-120b",
+    },
+}
+
 TEMPERATURE = 0
 
 CONTEXT_PROMPT_TEMPLATE = """Here is the full document:

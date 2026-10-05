@@ -1,7 +1,6 @@
 import re
-import requests
 
-from config import TEMPERATURE, VERIFY_MODEL_NAME, OLLAMA_URL
+from llm_client import chat
 from generate import generate_answer
 from retrieve import retrieve_chunks
 
@@ -20,26 +19,15 @@ def extract_final_answer(answer_text):
     final_line = final_line_match.group()
     citation_numbers = [int(n) for n in re.findall(r"\[(\d+)\]", final_line)]
     clean_answer = re.sub(r"Final answer:\s*", "", final_line)
-    clean_answer = re.sub(r"\[\d+\]", "", clean_answer).strip()
+    clean_answer = re.sub(r"\[\d+\]", "", clean_answer)
+    clean_answer = clean_answer.strip(" *_`").strip()
     return clean_answer, citation_numbers
 
 
-def verify_single_citation(question, answer, source_text, doc_id, model=VERIFY_MODEL_NAME):
+def verify_single_citation(question, answer, source_text, doc_id):
     labeled_source = f"(From document: {doc_id})\n{source_text}"
     user_prompt = f"Question:\n{question}\n\nProposed answer:\n{answer}\n\nSource:\n{labeled_source}"
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": VERIFY_SINGLE_SYSTEM_PROMPT},
-            {"role": "user", "content": user_prompt},
-        ],
-        "stream": False,
-        "options": {"temperature": TEMPERATURE},
-    }
-    response = requests.post(OLLAMA_URL, json=payload, timeout=300)
-    response.raise_for_status()
-    data = response.json()
-    return data["message"]["content"]
+    return chat("verify", VERIFY_SINGLE_SYSTEM_PROMPT, user_prompt)
 
 
 def verify_citations(question, answer_text, citation_map):

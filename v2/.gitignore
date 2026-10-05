@@ -1,0 +1,5 @@
+# Generated vector DB (binary, regenerable from data/chunks.json via embed.py)
+data/chroma_db/
+
+# DeepEval's local run-history/telemetry cache
+src/.deepeval/

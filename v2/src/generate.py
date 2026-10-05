@@ -1,7 +1,5 @@
 
-import requests
-
-from config import GENERATION_MODEL_NAME, OLLAMA_URL, TEMPERATURE
+from llm_client import chat
 from retrieve import retrieve_chunks
 
 
@@ -11,7 +9,7 @@ First, reason step by step: for each fact relevant to the question, identify whi
 
 If the question asks "besides X" or "excluding X", your reasoning must explicitly check and rule out X before considering any other candidate, and your final answer must NOT be X even if X appears prominently in the sources.
 
-After your reasoning, give your final answer on its own line starting with "Final answer:", followed by the actual answer itself (a name or fact -- never leave this blank or citations-only), with the matching source number(s) in square brackets immediately after it, like "Final answer: Dennis Rodman [3]". Only cite a source number if you just quoted or paraphrased that exact source during your reasoning -- never attach a citation to a claim you did not verify against the source text.
+After your reasoning, give your final answer on its own line starting with "Final answer:", followed by the actual answer itself (a name or fact -- never leave this blank or citations-only), with the matching source number(s) in square brackets immediately after it, like "Final answer: Dennis Rodman [3]". Only cite a source number if you just quoted or paraphrased that exact source during your reasoning -- never attach a citation to a claim you did not verify against the source text. Do not use markdown formatting (no bold, no asterisks, no backticks) anywhere on the final answer line -- it must be plain text starting exactly with "Final answer:".
 
 If the sources do not contain enough information to answer, write "Final answer: I don't know based on the provided sources." and nothing else. Do not use outside knowledge."""
 
@@ -26,25 +24,5 @@ def build_source_block(retrieved_chunks):
 def generate_answer(question, retrieved_chunks):
     source_blocks, citation_map = build_source_block(retrieved_chunks)
     user_prompt = f"Sources:\n{source_blocks}\n\nQuestion:{question}"
-    payload = {
-                "model": GENERATION_MODEL_NAME,
-                        "messages": [
-                            {
-                                "role": "system",
-                                "content": SYSTEM_PROMPT
-                            },
-                            {
-                                "role": "user", 
-                                "content": user_prompt
-                            },
-                        ],
-                        "stream": False,
-                        "options": {
-                            "temperature": TEMPERATURE
-                        }
-            }
-    response = requests.post(OLLAMA_URL, json=payload, timeout=300)
-    response.raise_for_status()
-    data = response.json()
-    answer_text = data["message"]["content"]
+    answer_text = chat("generation", SYSTEM_PROMPT, user_prompt)
     return answer_text, citation_map, source_blocks

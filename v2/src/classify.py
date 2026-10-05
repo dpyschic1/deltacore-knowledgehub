@@ -1,28 +1,8 @@
-import requests
-from config import GENERATION_MODEL_NAME, ROUTER_SYSTEM_PROMPT, TEMPERATURE, OLLAMA_URL, SIMPLE_TOP_K, SIMPLE_RERANK_TOP_N, COMPLEX_TOP_K
+from config import ROUTER_SYSTEM_PROMPT, SIMPLE_TOP_K, SIMPLE_RERANK_TOP_N, COMPLEX_TOP_K
+from llm_client import chat
 
 def classify_query(question):
-    payload = {
-            "model": GENERATION_MODEL_NAME,
-                    "messages": [
-                        {
-                            "role": "system",
-                            "content": ROUTER_SYSTEM_PROMPT
-                        },
-                        {
-                            "role": "user", 
-                            "content": question
-                        },
-                    ],
-                    "stream": False,
-                    "options": {
-                        "temperature": TEMPERATURE
-                    }
-        }
-    response = requests.post(OLLAMA_URL, json=payload, timeout=100)
-    response.raise_for_status()
-    data = response.json()
-    content = data["message"]["content"]
+    content = chat("classify", ROUTER_SYSTEM_PROMPT, question)
     label = content.strip().lower()
 
     if "simple" in label and "complex" not in label:

@@ -1,8 +1,8 @@
 import json
 import re
-import requests
 from pathlib import Path
-from config import CHUNK_SIZE, CHUNK_OVERLAP, OLLAMA_URL, GENERATION_MODEL_NAME, TEMPERATURE, CONTEXT_PROMPT_TEMPLATE
+from config import CHUNK_SIZE, CHUNK_OVERLAP, CONTEXT_PROMPT_TEMPLATE
+from llm_client import chat
 
 HEADING_RE = re.compile(r'^#{1,6}\s+.*$', re.MULTILINE)
 
@@ -72,27 +72,11 @@ def chunk_text(text, chunk_size, overlap):
 
 #context is helpful downstream to better place the chunk in the document, specially useful for multi-hop reasoning
 def generate_context(whole_document_text, chunk_text):
-    payload = {
-        "model": GENERATION_MODEL_NAME,
-                "messages": [
-                    {
-                        "role": "system",
-                        "content": "You are a helpful assistant that writes concise context summaries."
-                    },
-                    {
-                        "role": "user", 
-                        "content": CONTEXT_PROMPT_TEMPLATE.format(whole_document=whole_document_text, chunk=chunk_text)
-                    },
-                ],
-                "stream": False,
-                "options": {
-                    "temperature": TEMPERATURE
-                }
-    }
-    response = requests.post(OLLAMA_URL, json=payload, timeout=100)
-    response.raise_for_status()
-    data = response.json()
-    return data["message"]["content"]
+    return chat(
+        "context",
+        "You are a helpful assistant that writes concise context summaries.",
+        CONTEXT_PROMPT_TEMPLATE.format(whole_document=whole_document_text, chunk=chunk_text),
+    )
 
 
 def main():
